@@ -1,8 +1,7 @@
-!/bin/bash
+#!/bin/bash
 # installs the scripts and builds the links for the 3S provisioner
 
 INSTALLER="wago_3S_edge_provisioner"
-INSTALLER_URL="https://github.com/jessejamescox/$INSTALLER/archive/refs/heads/main.zip"
 INSTALLER_DIR="$INSTALLER-main"
 IPK_DIR="/home/ipk/"
 IPK_FILE="codesyscontrol_tp600_4.0.0.0_all.ipk"
@@ -12,7 +11,7 @@ INIT_DIR="/etc/rc.d"
 mv $INSTALLER_DIR/install_3S /etc/init.d/installer_3S && chmod a+x /etc/init.d/install_3S
 
 # move the components around
-mkdir /home/ipk && mv INSTALLER_DIR/$IPK_FILE $IPK_DIR
+mkdir /home/ipk && mv $INSTALLER_DIR/$IPK_FILE $IPK_DIR
 
 # move to the startup scripts directory
 cd $INIT_DIR
