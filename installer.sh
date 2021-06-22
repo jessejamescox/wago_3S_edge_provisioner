@@ -11,7 +11,7 @@ INIT_DIR="/etc/rc.d"
 mv $INSTALLER_DIR/install_3S /etc/init.d/installer_3S && chmod a+x /etc/init.d/install_3S
 
 # move the components around
-mkdir /home/ipk && mv $INSTALLER_DIR/$IPK_FILE $IPK_DIR
+mkdir $IPK_DIR && mv $INSTALLER_DIR/$IPK_FILE $IPK_DIR
 
 # move to the startup scripts directory
 cd $INIT_DIR
