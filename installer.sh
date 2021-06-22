@@ -8,7 +8,7 @@ IPK_FILE="codesyscontrol_tp600_4.0.0.0_all.ipk"
 INIT_DIR="/etc/rc.d"
 
 # move the components around
-mv $INSTALLER_DIR/install_3S /etc/init.d/installer_3S && chmod a+x /etc/init.d/install_3S
+mv $INSTALLER_DIR/install_3S /etc/init.d/install_3S && chmod a+x /etc/init.d/install_3S
 
 # move the components around
 mkdir $IPK_DIR && mv $INSTALLER_DIR/$IPK_FILE $IPK_DIR
