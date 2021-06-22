@@ -8,4 +8,6 @@ Automatically update Edge Controller to current firmware and Codesys Control Run
 3. Access the shell and run the following script:
 `wget https://github.com/jessejamescox/wago_3S_edge_provisioner/archive/refs/heads/main.zip && unzip main.zip && sh wago_3S_edge_provisioner/installer.sh`
 
-4. Now your SD card will automatically flash the hardware when installed during boot.  This also adds a script to install the Codesys Control Runtime for WAGO TP600.  This will require a second reboot after the initial firmware updates.
+4. Now, boot any Edge Controller ot TP600 with the SD card installed.  It will replace the existing formware
+
+5. When this is complete remove the SD card and boot the device.  The Codesys Runtime will be installed and the controller will reboot automatically one more time
