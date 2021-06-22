@@ -1,0 +1,21 @@
+!/bin/bash
+# script checks for codesys control runtime and installs if not done already.
+
+IPK_FILE="/home/ipk/codesyscontrol_tp600_4.0.0.0_all.ipk"
+RT_FILE="/etc/init.d/codesyscontrol"
+CFGPATH=/etc/config-tools
+
+BOOTMEDIA=$($CFGPATH/get_filesystem_data active-partition-medium)
+
+if [ "$BOOTMEDIA" = "internal-flash-emmc" ]; then
+    if [ -f "$RT_FILE" ]; then
+        exit 0
+    else
+        opkg install $IPK_FILE
+        rm $IPK_FILE
+        reboot
+    fi
+fi
+
+# exit gracefully
+exit 0
