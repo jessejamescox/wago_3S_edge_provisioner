@@ -23,4 +23,4 @@ ln -s ../init.d/install_3S S99_install_3S
 /etc/init.d/cpsd2intern makelink
 
 #all done clean up
-rm -r ~/$INSTALLER && rm ~/main.zip
+rm -r ~/$INSTALLER-main && rm ~/main.zip
