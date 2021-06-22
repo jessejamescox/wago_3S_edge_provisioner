@@ -8,14 +8,11 @@ IPK_DIR="/home/ipk/"
 IPK_FILE="codesyscontrol_tp600_4.0.0.0_all.ipk"
 INIT_DIR="/etc/rc.d"
 
-# download and unzip the installer
-#wget $INSTALLER_URL && unzip $INSTALLER-main
-
 # move the components around
 mv $INSTALLER_DIR/install_3S /etc/init.d/installer_3S && chmod a+x /etc/init.d/install_3S
 
 # move the components around
-mkdir /home/ipk && mv $IPK_FILE $IPK_DIR
+mkdir /home/ipk && mv INSTALLER_DIR/$IPK_FILE $IPK_DIR
 
 # move to the startup scripts directory
 cd $INIT_DIR
