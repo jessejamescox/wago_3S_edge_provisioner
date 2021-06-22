@@ -13,7 +13,7 @@ if [ "$BOOTMEDIA" = "internal-flash-emmc" ]; then
         exit 0
     else
         opkg install $IPK_FILE
-        rm $IPK_FILE
+        rm -r $IPK_DIR
         reboot
     fi
 fi
