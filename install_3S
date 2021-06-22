@@ -1,7 +1,8 @@
 !/bin/bash
 # script checks for codesys control runtime and installs if not done already.
 
-IPK_FILE="/home/ipk/codesyscontrol_tp600_4.0.0.0_all.ipk"
+IPK_DIR="/home/ipk"
+IPK_FILE="$IPK_DIR/codesyscontrol_tp600_4.0.0.0_all.ipk"
 RT_FILE="/etc/init.d/codesyscontrol"
 CFGPATH=/etc/config-tools
 
