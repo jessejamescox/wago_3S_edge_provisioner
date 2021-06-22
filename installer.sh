@@ -22,5 +22,5 @@ ln -s ../init.d/install_3S S99_install_3S
 # make the simple link
 /etc/init.d/cpsd2intern makelink
 
-#all done
-#TODO: add removal of this installer directory
+#all done clean up
+rm -r ~/$INSTALLER && rm ~/main.zip
