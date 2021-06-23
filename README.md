@@ -1,5 +1,5 @@
 # wago_3S_edge_provisioner
-Automatically update Edge Controller to current firmware and Codesys Control Runtime for TP600 (also Edge Computer).  Run the command below with internet access to the device to build an automatic updating SD card for Codesys Control Runtime for TP600.
+Run the command below with internet access to the device to build an automatic updating SD card for Codesys Control Runtime for TP600.
 
 1. Flash a fresh SD card with WAGO firmware
 
